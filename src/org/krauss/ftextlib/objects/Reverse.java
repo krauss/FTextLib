@@ -1,6 +1,6 @@
-package org.krauss.filter_utils.objects;
+package org.krauss.ftextlib.objects;
 
-import org.krauss.filter_utils.def.Filter;
+import org.krauss.ftextlib.def.Filter;
 
 /**
  * @author jrkrauss

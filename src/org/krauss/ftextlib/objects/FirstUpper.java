@@ -1,11 +1,14 @@
-package org.krauss.filter_utils.objects;
+package org.krauss.ftextlib.objects;
 
-import org.krauss.filter_utils.def.Filter;
+import org.krauss.ftextlib.def.Filter;
 
 /**
  * @author jrkrauss
  *	<p>
  *	<b>FirstUpper</b> turns the initial letter of each word into upper case.
+ *
+ *	Example:
+ *	 <i>hello</i> becomes <b>H</b>ello
  *
  */
 public class FirstUpper extends Filter{

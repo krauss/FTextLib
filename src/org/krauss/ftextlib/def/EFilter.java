@@ -1,4 +1,4 @@
-package org.krauss.filter_utils.def;
+package org.krauss.ftextlib.def;
 
 /**
  * 
@@ -8,7 +8,14 @@ package org.krauss.filter_utils.def;
  *
  */
 public enum EFilter {
-
+	
+	/**
+	 *	<b>FirstUpper</b> turns the initial letter of each word into upper case.
+	 *
+	 *	Example:
+	 *	 <i>hello</i> becomes <b>H</b>ello
+	 *
+	 */
     FIRST_UPPER("First Upper"),
     NO_SPACE("No Space"),
     NO_VOWEL("No Vowel"),

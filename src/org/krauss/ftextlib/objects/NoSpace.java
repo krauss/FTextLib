@@ -1,11 +1,14 @@
-package org.krauss.filter_utils.objects;
+package org.krauss.ftextlib.objects;
 
-import org.krauss.filter_utils.def.Filter;
+import org.krauss.ftextlib.def.Filter;
 
 /**
  * @author jrkrauss
  *         <p>
  *	<b>NoSpace</b> filter works by removing all the spaces within a word.
+ *	
+ *	Example:
+ *	<i>Hello world!</i> becomes <b>Helloworld!</b>
  *
  */
 public class NoSpace extends Filter{

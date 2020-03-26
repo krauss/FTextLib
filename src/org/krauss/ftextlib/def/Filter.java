@@ -1,10 +1,10 @@
-package org.krauss.filter_utils.def;
+package org.krauss.ftextlib.def;
 /**
  * 
  * @author jrkrauss
  *	<p>
- *	Abstract class that represents a filter. As more text filter come up, this class <br>
- *	has to be extended in order to be used by the FilterFactory.
+ *	Abstract class that represents an object Filter. As more text filters are added, 
+ *	this class has to be extended in order to be used by the FilterFactory.
  */
 public abstract class Filter {
 

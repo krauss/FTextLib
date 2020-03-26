@@ -1,12 +1,15 @@
-package org.krauss.filter_utils.objects;
+package org.krauss.ftextlib.objects;
 
-import org.krauss.filter_utils.def.Filter;
+import org.krauss.ftextlib.def.Filter;
 import com.sun.org.apache.xerces.internal.impl.xpath.regex.RegularExpression;
 
 /**
  * @author jrkrauss
  *	<p>
  *	<b>Opish</b> filter works by adding an ‘op’ after each consonant.
+ *
+ *	Example:
+ *	<i>fuck sake</i> becomes <b>fopucopkop sopakope</b> 
  */
 public class Opish extends Filter {
 	

@@ -1,6 +1,6 @@
-package org.krauss.filter_utils.objects;
+package org.krauss.ftextlib.objects;
 
-import org.krauss.filter_utils.def.Filter;
+import org.krauss.ftextlib.def.Filter;
 
 /**
  * @author jrkrauss
@@ -10,10 +10,12 @@ import org.krauss.filter_utils.def.Filter;
  *
  *	Example:
  *	<ul>  
- *		<li><b>a</b> becomes <b>z</b></li>
- *		<li><b>b</b> becomes <b>y</b></li>
- *		<li><b>c</b> becomes <b>x</b></li>
+ *		<li>every <b>a</b> becomes <b>z</b></li>
+ *		<li>every <b>b</b> becomes <b>y</b></li>
+ *		<li>every <b>c</b> becomes <b>x</b></li>
  *	</ul>
+ * <i>politian cocksuckers</i> becomes <b>klorgrzm xlxphfxpvih</b>
+ * 
  */
 public class Atbash extends Filter{
 

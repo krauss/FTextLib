@@ -1,14 +1,14 @@
-package org.krauss.filter_utils.factory;
+package org.krauss.ftextlib.factory;
 
-import org.krauss.filter_utils.def.EFilter;
-import org.krauss.filter_utils.def.Filter;
-import org.krauss.filter_utils.objects.*;
+import org.krauss.ftextlib.def.EFilter;
+import org.krauss.ftextlib.def.Filter;
+import org.krauss.ftextlib.objects.*;
 
 public class FilterFactory {
 	
 	/**
 	 * 
-	 * @param filtertype - the filter to be applied on the text
+	 * @param filtertype - the enum EFilter to be applied on the text
 	 * @param text - the text to be filtered
 	 * @return - the text processed through the filter
 	 * 

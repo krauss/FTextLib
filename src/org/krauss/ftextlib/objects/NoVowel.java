@@ -1,12 +1,14 @@
-package org.krauss.filter_utils.objects;
+package org.krauss.ftextlib.objects;
 
-import org.krauss.filter_utils.def.Filter;
+import org.krauss.ftextlib.def.Filter;
 
 /**
  * @author jrkrauss
  *	<p>
  *	<b>NoVowel</b> filter removes all the vowels within the word/text.
  *
+ *	Example:
+ *	<i>Hell of world!</i> becomes <b>Hll f wrld!</b>
  */
 public class NoVowel extends Filter{
 

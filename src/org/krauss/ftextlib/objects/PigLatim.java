@@ -1,15 +1,18 @@
-package org.krauss.filter_utils.objects;
+package org.krauss.ftextlib.objects;
 
-import org.krauss.filter_utils.def.Filter;
+import org.krauss.ftextlib.def.Filter;
 
 import com.sun.org.apache.xerces.internal.impl.xpath.regex.RegularExpression;
 
 /**
  * @author jrkrauss
  *	<p>
- *	<b>PigLatim</b> filter works this way: <br>
- *	For words beginning with consonant sounds, all letters before the initial vowel are placed at the end of<br>
- *	the word sequence and then, "ay" is appended.
+ *	<b>PigLatim</b> filter works by appending an 'way' at the end of each word.
+ *	 - If the word starts with a vowel, just append 'way'
+ *	 - If the word starts with a consonant, bring that consonant to the end and append 'ay'
+ *	
+ *	Example:
+ *	<i>economy sucks</i> becomes <b>economyway uckssay</b>
  *
  */
 public class PigLatim extends Filter {

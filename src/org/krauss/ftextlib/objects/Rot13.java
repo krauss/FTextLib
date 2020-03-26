@@ -1,6 +1,6 @@
-package org.krauss.filter_utils.objects;
+package org.krauss.ftextlib.objects;
 
-import org.krauss.filter_utils.def.Filter;
+import org.krauss.ftextlib.def.Filter;
 
 /**
  * @author jrkrauss
@@ -14,6 +14,7 @@ import org.krauss.filter_utils.def.Filter;
  *		<li><b>b</b> becomes <b>o</b></li>
  *		<li><b>c</b> becomes <b>p</b></li>
  *	</ul>
+ *	<i>earth isn't flat</i> becomes <b>rnegu vfag syng</b> 
  */
 public class Rot13 extends Filter{
 
