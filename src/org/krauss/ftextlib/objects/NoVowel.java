@@ -12,15 +12,9 @@ import org.krauss.ftextlib.def.Filter;
  */
 public class NoVowel extends Filter{
 
-	public NoVowel(String text) {
-		super(text);
-	}
-
 	@Override
-	public String processFilter() {		
-		
-		this.filteredText = rawText.replaceAll("[aeiouAEIOU]", "");;		
-		return filteredText; 
+	public String processFilter(String txt) {		
+		return txt.replaceAll("[aeiouAEIOU]", ""); 
 	}
 
 }

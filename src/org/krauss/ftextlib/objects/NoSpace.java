@@ -12,17 +12,11 @@ import org.krauss.ftextlib.def.Filter;
  *
  */
 public class NoSpace extends Filter{
-		
 
-	public NoSpace(String text) {
-		super(text);
-	}
 
 	@Override
-	public String processFilter() {
-		
-		this.filteredText = rawText.replaceAll("\\s+", "");;
-		return filteredText;
+	public String processFilter(String text) {
+		return  text.replaceAll("\\s+", "");
 	}
 		
 }

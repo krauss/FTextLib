@@ -19,16 +19,16 @@ import org.krauss.ftextlib.def.Filter;
  */
 public class Atbash extends Filter{
 
-	public Atbash(String text) {
-		super(text);
+	public Atbash() {
+		super();
 	}
 
 	@Override
-	public String processFilter() {
-		String tmp = rawText;
+	public String processFilter(String txt) {
+		String tmp = txt;
 		String result = "";
 
-		for (int i = 0; i < rawText.length(); i++) {
+		for (int i = 0; i < txt.length(); i++) {
 			if (!Character.isWhitespace(tmp.charAt(i))) {
 				for (int x = 0; x < 26; x++) {
 					if (tmp.charAt(i) == alphabet[x]) {
@@ -41,8 +41,7 @@ public class Atbash extends Filter{
 				result += ' ';
 			}
 		}
-		this.filteredText = result;
-		return filteredText;
+		return result;
 
 	}
 

@@ -11,18 +11,12 @@ import org.krauss.ftextlib.def.Filter;
  *		<b>radio</b> becomes <b>oidar</b>
  */
 public class Reverse extends Filter {
-	
-	
-
-	public Reverse(String text) {
-		super(text);
-	}
 
 	@Override
-	public String processFilter() {
+	public String processFilter(String txt) {
 		
 		String result = "";
-		String[] t = rawText.replaceAll("\\s+", " ").split(" ");
+		String[] t = txt.replaceAll("\\s+", " ").split(" ");
 		
 		for (int i = 0; i < t.length; i++) {
 			for (int j = 0; j < t[i].length(); j++) {
@@ -31,8 +25,7 @@ public class Reverse extends Filter {
 			result += " ";
 			
 		}
-		filteredText = result;
-		return filteredText;
+		return result;
 	}
 
 }

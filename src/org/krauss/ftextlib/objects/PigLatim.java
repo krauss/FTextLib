@@ -2,8 +2,6 @@ package org.krauss.ftextlib.objects;
 
 import org.krauss.ftextlib.def.Filter;
 
-import com.sun.org.apache.xerces.internal.impl.xpath.regex.RegularExpression;
-
 /**
  * @author jrkrauss
  *	<p>
@@ -16,19 +14,13 @@ import com.sun.org.apache.xerces.internal.impl.xpath.regex.RegularExpression;
  *
  */
 public class PigLatim extends Filter {
-	
-	RegularExpression expresion = new RegularExpression("[^aeiouAEIOU]");
-	
-	public PigLatim(String text) {
-		super(text);
-	}
+
 
 	@Override
-	public String processFilter() {
-		
+	public String processFilter(String txt) {	
 		
 		String result = "";
-		String[] t = rawText.replaceAll("\\s+", " ").split(" ");
+		String[] t = txt.replaceAll("\\s+", " ").split(" ");
 		
 		for (String x : t) {
 			if(expresion.matches(x.charAt(0)+"")){				
@@ -37,9 +29,7 @@ public class PigLatim extends Filter {
 				result += x + "way ";
 			}
 		}
-		
-		this.filteredText = result;
-		return filteredText;
+		return result;
 	}
 
 }

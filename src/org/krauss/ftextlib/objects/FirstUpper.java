@@ -13,20 +13,15 @@ import org.krauss.ftextlib.def.Filter;
  */
 public class FirstUpper extends Filter{
 
-	public FirstUpper(String text) {
-		super(text);
-	}
-
 	@Override
-	public String processFilter() {
+	public String processFilter(String txt) {
 		String result = "";
-		String[] t = rawText.replaceAll("\\s+", " ").split(" ");
+		String[] t = txt.replaceAll("\\s+", " ").split(" ");
 		for (String x : t) {
 			result += x.substring(0, 1).toUpperCase() + x.substring(1).toLowerCase() + " ";
 		}
 		
-		this.filteredText = result;
-		return filteredText;
+		return result;
 	}
 	
 		

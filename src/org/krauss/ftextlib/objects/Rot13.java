@@ -18,16 +18,12 @@ import org.krauss.ftextlib.def.Filter;
  */
 public class Rot13 extends Filter{
 
-	public Rot13(String text) {
-		super(text);
-	}
-
 	@Override
-	public String processFilter() {
-		String tmp = rawText;
+	public String processFilter(String txt) {
+		String tmp = txt;
 		String result = "";
 
-		for (int i = 0; i < rawText.length(); i++) {
+		for (int i = 0; i < txt.length(); i++) {
 			if (!Character.isWhitespace(tmp.charAt(i))) {
 				for (int x = 0; x < 13; x++) {
 					if (tmp.charAt(i) == alphabet[x]) {
@@ -44,9 +40,7 @@ public class Rot13 extends Filter{
 				result += ' ';
 			}
 		}
-		
-		this.filteredText = result;
-		return filteredText;
+		return result;
 	}
 
 }

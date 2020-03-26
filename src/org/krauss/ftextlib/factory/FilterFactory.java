@@ -13,7 +13,7 @@ public class FilterFactory {
 	 * @return - the text processed through the filter
 	 * 
 	 */
-	public static Filter getFilter(EFilter filtertype, String text){
+	public static Filter getFilter(EFilter filtertype){
 		Filter f = null;
 		
 		if(filtertype == null){
@@ -24,28 +24,28 @@ public class FilterFactory {
 		switch (filtertype) {
 		
 		case FIRST_UPPER:
-			f = new FirstUpper(text);
+			f = new FirstUpper();
 			break;
 		case NO_VOWEL:
-			f = new NoVowel(text);
+			f = new NoVowel();
 			break;
 		case NO_SPACE:
-			f = new NoSpace(text);
+			f = new NoSpace();
 			break;
 		case ROT13:
-			f = new Rot13(text);
+			f = new Rot13();
 			break;
 		case ATBASH:
-			f = new Atbash(text);
+			f = new Atbash();
 			break;
 		case PIG_LATIM:
-			f = new PigLatim(text);
+			f = new PigLatim();
 			break;
 		case OPISH:
-			f = new Opish(text);
+			f = new Opish();
 			break;
 		case REVERSE:
-			f = new Reverse(text);
+			f = new Reverse();
 			break;
 		default:
 			break;

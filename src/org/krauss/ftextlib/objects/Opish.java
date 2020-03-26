@@ -1,7 +1,6 @@
 package org.krauss.ftextlib.objects;
 
 import org.krauss.ftextlib.def.Filter;
-import com.sun.org.apache.xerces.internal.impl.xpath.regex.RegularExpression;
 
 /**
  * @author jrkrauss
@@ -12,20 +11,12 @@ import com.sun.org.apache.xerces.internal.impl.xpath.regex.RegularExpression;
  *	<i>fuck sake</i> becomes <b>fopucopkop sopakope</b> 
  */
 public class Opish extends Filter {
-	
-	RegularExpression expresion = new RegularExpression("[^aeiouAEIOU]");
 
-	
-	public Opish(String text) {
-		super(text);
-	}
-
-	
 	@Override
-	public String processFilter() {
+	public String processFilter(String txt) {
 		
 		String result = "";
-		String[] t = rawText.replaceAll("\\s+", " ").split(" ");
+		String[] t = txt.replaceAll("\\s+", " ").split(" ");
 				
 		for (String x : t) {
 			for (int j = 0; j < x.length(); j++) {
@@ -37,8 +28,7 @@ public class Opish extends Filter {
 			}
 			result += " ";
 		}
-		this.filteredText = result;
-		return filteredText;
+		return result;
 	}
 
 }
