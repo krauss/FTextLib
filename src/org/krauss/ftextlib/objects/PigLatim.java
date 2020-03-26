@@ -17,7 +17,7 @@ public class PigLatim extends Filter {
 
 
 	@Override
-	public String processFilter(String txt) {	
+	public String applyFilter(String txt) {	
 		
 		String result = "";
 		String[] t = txt.replaceAll("\\s+", " ").split(" ");

@@ -24,7 +24,7 @@ public class Atbash extends Filter{
 	}
 
 	@Override
-	public String processFilter(String txt) {
+	public String applyFilter(String txt) {
 		String tmp = txt;
 		String result = "";
 

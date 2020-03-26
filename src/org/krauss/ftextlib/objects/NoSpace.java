@@ -15,7 +15,7 @@ public class NoSpace extends Filter{
 
 
 	@Override
-	public String processFilter(String text) {
+	public String applyFilter(String text) {
 		return  text.replaceAll("\\s+", "");
 	}
 		

@@ -14,7 +14,7 @@ import org.krauss.ftextlib.def.Filter;
 public class FirstUpper extends Filter{
 
 	@Override
-	public String processFilter(String txt) {
+	public String applyFilter(String txt) {
 		String result = "";
 		String[] t = txt.replaceAll("\\s+", " ").split(" ");
 		for (String x : t) {

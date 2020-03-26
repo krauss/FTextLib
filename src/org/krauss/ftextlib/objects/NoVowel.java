@@ -13,7 +13,7 @@ import org.krauss.ftextlib.def.Filter;
 public class NoVowel extends Filter{
 
 	@Override
-	public String processFilter(String txt) {		
+	public String applyFilter(String txt) {		
 		return txt.replaceAll("[aeiouAEIOU]", ""); 
 	}
 

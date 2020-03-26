@@ -19,7 +19,7 @@ import org.krauss.ftextlib.def.Filter;
 public class Rot13 extends Filter{
 
 	@Override
-	public String processFilter(String txt) {
+	public String applyFilter(String txt) {
 		String tmp = txt;
 		String result = "";
 

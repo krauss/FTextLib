@@ -29,6 +29,6 @@ public abstract class Filter {
 	 * The filter method to be overridden when this class is extended
 	 * 
 	 */	
-	public abstract String processFilter(String text);
+	public abstract String applyFilter(String text);
 
 }
