@@ -23,7 +23,8 @@ public enum EFilter {
     ATBASH("Atbash"),
     PIG_LATIM("Pig Latim"),
     OPISH("Opish"),
-    REVERSE("Reverse");
+    REVERSE("Reverse"),
+	ALL_UNDERSCORE("All Underscore");
 
     private String name;
 

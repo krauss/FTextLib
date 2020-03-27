@@ -18,17 +18,11 @@ public abstract class Filter {
 	protected char[] alphabet = { 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z' };
 	protected char[] ALPHABET = { 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z' };
 
-
-
-	public String getFilteredText() {		
-		return this.filteredText == null ? "No filter applied" : this.filteredText;
-	}
-
 	/*
 	 * 
 	 * The filter method to be overridden when this class is extended
 	 * 
 	 */	
-	public abstract String applyFilter(String text);
+	public abstract String applyFilter(String txt);
 
 }

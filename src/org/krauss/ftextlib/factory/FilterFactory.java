@@ -47,6 +47,9 @@ public class FilterFactory {
 		case REVERSE:
 			f = new Reverse();
 			break;
+		case ALL_UNDERSCORE:
+			f = new AllUnderscore();
+			break;
 		default:
 			break;
 		}

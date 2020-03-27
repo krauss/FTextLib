@@ -5,28 +5,36 @@ import org.krauss.ftextlib.def.Filter;
 /**
  * @author jrkrauss
  *         <p>
- *	<b>Atbash</b> filter works by replacing the first letter of the alphabet for the last letter,<br>
- *	the second letter for the second last and so on, effectively reversing the alphabet.
+ *         <b>Atbash</b> filter works by replacing the first letter of the
+ *         alphabet for the last letter,<br>
+ *         the second letter for the second last and so on, effectively
+ *         reversing the alphabet.
  *
- *	Example:
- *	<ul>  
- *		<li>every <b>a</b> becomes <b>z</b></li>
- *		<li>every <b>b</b> becomes <b>y</b></li>
- *		<li>every <b>c</b> becomes <b>x</b></li>
- *	</ul>
- * <i>politian cocksuckers</i> becomes <b>klorgrzm xlxphfxpvih</b>
+ *         Example:
+ *         <ul>
+ *         <li>every <b>a</b> becomes <b>z</b></li>
+ *         <li>every <b>b</b> becomes <b>y</b></li>
+ *         <li>every <b>c</b> becomes <b>x</b></li>
+ *         </ul>
+ *         <i>politian cocksuckers</i> becomes <b>klorgrzm xlxphfxpvih</b>
  * 
  */
-public class Atbash extends Filter{
-
-	public Atbash() {
-		super();
-	}
+public class Atbash extends Filter {
 
 	@Override
 	public String applyFilter(String txt) {
 		String tmp = txt;
 		String result = "";
+
+		// txt can't be null
+		if (txt == null) {
+			return "It can't be null";
+		}
+
+		// txt can't be empty
+		if (txt.equalsIgnoreCase("")) {
+			return "It can't be empty";
+		}
 
 		for (int i = 0; i < txt.length(); i++) {
 			if (!Character.isWhitespace(tmp.charAt(i))) {
@@ -41,6 +49,7 @@ public class Atbash extends Filter{
 				result += ' ';
 			}
 		}
+
 		return result;
 
 	}
