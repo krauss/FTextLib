@@ -5,14 +5,14 @@
 Download the [jar file](lib/) into your project's folder and import it into your project's path.
 Once you've done that, that's how you use in your code:
 
-```
+```java
 import org.krauss.ftextlib.def.EFilter;
 import org.krauss.ftextlib.factory.FilterFactory;
 ```
 
 Then using the `FilterFactory` class, you can create a filter and apply it straight away like this:
 
-```
+```java
 FilterFactory.getFilter(EFilter.REVERSE).applyFilter("Hell of world!");
 
 
