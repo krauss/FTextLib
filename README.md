@@ -18,7 +18,7 @@ FilterFactory.getFilter(EFilter.REVERSE).applyFilter("Hell of world!");
 
 Output:
 
-lleH fo !dlrow 
+"lleH fo !dlrow" 
 ```
 
 The static method `getFilter` receives one argument `EFilter`, which is an `Enum` 
@@ -30,14 +30,14 @@ At the moment, these are all the filters available:
 
 Filter | Description
 ------ | -----------
-`FIRST_UPPER` | Turns upper case all first letters
-`NO_SPACE` | Removes all the blank space
-`NO_VOWEL` | Removes all the vowels 
-`ROT13` | Replaces a letter with the its 13th succeeding one it in the alphabet
-`ATBASH` | Replaces 'a' with 'z', 'b' with 'y', 'c' with 'x' and so on 
-`PIG_LATIM` | Appends an 'ay' at the end of the word if it starts with a vowel
-`OPISH` | Adds 'op' after every consonant 
-`REVERSE` | Reverses the word
-`ALL_UNDERSCORE` | Replaces all blank space by a _ (underscore) 
+`EFilter.FIRST_UPPER` | Turns upper case all first letters in a sentence
+`EFilter.NO_SPACE` | Removes all the blank space from a sentence
+`EFilter.NO_VOWEL` | Removes all the vowels from a sentence
+`EFilter.ROT13` | Replaces a letter with the its 13th succeeding one it in the alphabet
+`EFilter.ATBASH` | Replaces 'a' with 'z', 'b' with 'y', 'c' with 'x' and so on 
+`EFilter.PIG_LATIM` | Appends an 'ay' at the end of the word if it starts with a vowel
+`EFilter.OPISH` | Adds 'op' after every consonant 
+`EFilter.REVERSE` | Reverses each word in a sentence
+`EFilter.ALL_UNDERSCORE` | Replaces all blank space by a _ (underscore) 
  
  
