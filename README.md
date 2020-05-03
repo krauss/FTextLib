@@ -1,10 +1,10 @@
 ## FTextLib :capital_abcd: :arrow_right: :symbols:
 
-#### What is it?
+#### 1. What is it?
 
 FTextLib is a simple JAVA library that implements some of the most common text filters available out there. 
 
-#### How to use
+#### 2. How to use?
 
 Download the [jar file](lib/) into your project's folder and import it into your project's path.
 Once you've done that, that's how you use in your code:
@@ -30,7 +30,7 @@ The static method `getFilter` receives one argument `EFilter`, which is an `Enum
 The method `applyFilter` returns a String with text already processed.
 
 
-At the moment, these are all the filters available:
+##### Filters available:
 
 | Filter | Enum | Description |
 | ------ | ---- | ----------- |
@@ -44,7 +44,7 @@ At the moment, these are all the filters available:
 | **Reverse** | `EFilter.REVERSE` | Reverses each word |
 | **All Underscore** | `EFilter.ALL_UNDERSCORE` | Replaces all blank space by a _ (underscore) |
  
-#### Docker Usage :whale:
+#### 3. Docker Usage :whale:
 
 If you just want to see how this library works, download our image available on Docker Hub following the instructions below:
 
@@ -56,7 +56,7 @@ Once you have [Docker CE](https://docs.docker.com/) installed an running, from y
 $ docker pull jrkrauss/ftextlib:latest
 ```
 
-##### Create the container and run it :ship:
+##### Create the container and run/ship it :ship:
 
 ```shell
 $ docker run -it jrkrauss/ftextlib:latest
