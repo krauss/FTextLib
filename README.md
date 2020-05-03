@@ -17,17 +17,20 @@ import org.krauss.ftextlib.factory.FilterFactory;
 Then using the `FilterFactory` class, you can create a filter and apply it straight away like this:
 
 ```java
-FilterFactory.getFilter(EFilter.REVERSE).applyFilter("Hell of world!");
+//FilterFactory.getFilter(EFilter filter)
+Filter filter = FilterFactory.getFilter(EFilter.REVERSE);
 
+//filter.applyFilter(String text);
+filter.applyFilter("Hell of world!");
 
-Output:
+//Output:
 
 "lleH fo !dlrow" 
 ```
 
-The static method `getFilter` receives one argument `EFilter`, which is an `Enum` 
+The static method `getFilter()` takes one argument `filter`, which is an `EFilter Enum` and returns an object `Filter` that has the method `applyFilter()`.
 
-The method `applyFilter` returns a String with text already processed.
+The method `applyFilter()` takes one argument `text` and returns a `String` which is the text already processed.
 
 
 ##### Filters available:
