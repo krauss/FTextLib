@@ -1,4 +1,4 @@
-## FTextLib
+## FTextLib :capital_abcd: :arrow_right: :symbols:
 
 #### What is it?
 
@@ -44,22 +44,22 @@ Filter | Description
 `EFilter.REVERSE` | Reverses each word in a sentence
 `EFilter.ALL_UNDERSCORE` | Replaces all blank space by a _ (underscore) 
  
-#### Docker Image
+#### Docker Usage :whale:
 
 If you just want to see how this library works, download our image available on Docker Hub following the instructions below:
 
-##### Download the image:
+##### Download the image :cd:
 
 Once you have [Docker CE](https://docs.docker.com/) installed an running, from your Linux terminal or Windows cmd, type:  
 
 ```shell
-$docker pull jrkrauss/ftextlib:latest
+$ docker pull jrkrauss/ftextlib:latest
 ```
 
-##### Create the container and run it:
+##### Create the container and run it :ship:
 
 ```shell
-$docker run -it jrkrauss/ftextlib:latest
+$ docker run -it jrkrauss/ftextlib:latest
 ```
  
  
