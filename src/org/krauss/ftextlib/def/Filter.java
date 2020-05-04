@@ -1,6 +1,5 @@
 package org.krauss.ftextlib.def;
 
-import com.sun.org.apache.xerces.internal.impl.xpath.regex.RegularExpression;
 
 /**
  * 
@@ -12,7 +11,7 @@ import com.sun.org.apache.xerces.internal.impl.xpath.regex.RegularExpression;
 public abstract class Filter {
 
 	protected String filteredText;
-	protected RegularExpression expresion = new RegularExpression("[^aeiouAEIOU]");
+	protected String expression = "[^aeiouAEIOU]";
 	protected char[] vowel = {'a','e','i','o','u'};
 	protected char[] VOWEL = {'A','E','I','O','U'};
 	protected char[] alphabet = { 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z' };

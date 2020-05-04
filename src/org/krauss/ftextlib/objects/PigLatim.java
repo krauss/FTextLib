@@ -32,7 +32,7 @@ public class PigLatim extends Filter {
 		String[] t = txt.replaceAll("\\s+", " ").split(" ");
 
 		for (String x : t) {
-			if (expresion.matches(x.charAt(0) + "")) {
+			if ((x.charAt(0) + "").matches(expression)) {
 				result += x.substring(1) + x.substring(0, 1) + "ay ";
 			} else {
 				result += x + "way ";

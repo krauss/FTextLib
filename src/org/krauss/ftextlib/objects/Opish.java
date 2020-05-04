@@ -5,7 +5,7 @@ import org.krauss.ftextlib.def.Filter;
 /**
  * @author jrkrauss
  *         <p>
- *         <b>Opish</b> filter works by adding an ‘op’ after each consonant.
+ *         <b>Opish</b> filter works by adding an 'op' after each consonant.
  *
  *         Example: <i>fuck sake</i> becomes <b>fopucopkop sopakope</b>
  */
@@ -29,7 +29,7 @@ public class Opish extends Filter {
 
 		for (String x : t) {
 			for (int j = 0; j < x.length(); j++) {
-				if (expresion.matches(x.charAt(j) + "")) {
+				if ((x.charAt(j) + "").matches(expression)) {
 					result += x.charAt(j) + "op";
 				} else {
 					result += x.charAt(j) + "";
