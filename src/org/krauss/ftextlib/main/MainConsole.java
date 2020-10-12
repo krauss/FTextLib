@@ -21,26 +21,26 @@ public class MainConsole {
 		System.out.println("|   Welcome to the FTextLib    |");
 		System.out.println("|    library usage sample.     |");
 		System.out.println("|                              |");
-		System.out.println("|   - A simple text filter     |");
-		System.out.println("|     library for playing      |");
-		System.out.println("|     around with words and    |");
-		System.out.println("|     sentences                |");
+		System.out.println("|       A simple library       |");
+		System.out.println("|      for playing around      |");
+		System.out.println("|   with words and sentences   |");
 		System.out.println("|                              |");
 		System.out.println("+------------------------------+\n");
 		System.out.println("1. Choose a filter:\n");
-		System.out.println("[1] FIRST_UPPER\t\tTurns upper case all first letters");
-		System.out.println("[2] NO_SPACE\t\tRemoves all the white spaces");
-		System.out.println("[3] NO_VOWEL\t\tRemoves all the vowels");
-		System.out.println("[4] ROT13\t\tReplaces a letter with the its 13th succeeding one it in the alphabet");
-		System.out.println("[5] ATBASH\t\tReplaces 'a' with 'z', 'b' with 'y', 'c' with 'x' and so on");
-		System.out.println("[6] PIG_LATIM\t\tAppends an 'ay' at the end of the word if it starts with a vowel");
-		System.out.println("[7] OPISH\t\tAdds 'op' after every consonant");
-		System.out.println("[8] REVERSE\t\tReverses each word");
-		System.out.println("[9] ALL_UNDERSCORE\tTurns all white spaces in underscore\n");
+		System.out.println("[ 1 ] FIRST_UPPER\t\tTurns upper case all first letters");
+		System.out.println("[ 2 ] NO_SPACE\t\tRemoves all the white spaces");
+		System.out.println("[ 3 ] NO_VOWEL\t\tRemoves all the vowels");
+		System.out.println("[ 4 ] ROT13\t\tReplaces a letter with the its 13th succeeding one it in the alphabet");
+		System.out.println("[ 5 ] ATBASH\t\tReplaces 'a' with 'z', 'b' with 'y', 'c' with 'x' and so on");
+		System.out.println("[ 6 ] PIG_LATIM\t\tAppends an 'ay' at the end of the word if it starts with a vowel");
+		System.out.println("[ 7 ] OPISH\t\tAdds 'op' after every consonant");
+		System.out.println("[ 8 ] REVERSE\t\tReverses each word");
+		System.out.println("[ 9 ] ALL_UNDERSCORE\tTurns all white spaces in underscore");
+		System.out.println("[10 ] CARIOCA_ACCENT\tReplaces [aeiou]s with [aeiou]x. Only makes sense in portuguese words\n");
 		
 		do {
 			
-			System.out.print("Filter [ 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 ]: ");		
+			System.out.print("Filter [ 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 ]: ");		
 			input = in.nextLine();
 			Integer language = Integer.parseInt(input);
 			
@@ -70,6 +70,9 @@ public class MainConsole {
 				isFilterPicked = true;
 			} else if (language == 9) {
 				filter = EFilter.ALL_UNDERSCORE;
+				isFilterPicked = true;
+			} else if (language == 10) {
+				filter = EFilter.CARIOCA_ACCENT;
 				isFilterPicked = true;
 			}
 			

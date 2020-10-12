@@ -40,12 +40,13 @@ The method `applyFilter()` takes one argument `text` and returns a `String` whic
 | **First Upper** | `EFilter.FIRST_UPPER` | Turns upper case all first letters |
 | **No Space** | `EFilter.NO_SPACE` | Removes all the blank space |
 | **No Vowel** | `EFilter.NO_VOWEL` | Removes all the vowels |
-| **ROT13** | `EFilter.ROT13` | Replaces a letter with the its 13th succeeding one it in the alphabet |
+| **ROT13** | `EFilter.ROT13` | Replaces a letter with its 13th succeeding one it in the alphabet |
 | **ATBASH** | `EFilter.ATBASH` | Replaces 'a' with 'z', 'b' with 'y', 'c' with 'x' and so on |
 | **Pig Latim** | `EFilter.PIG_LATIM` | Appends an 'ay' at the end of the word if it starts with a vowel |
 | **Opish** | `EFilter.OPISH` | Adds 'op' after every consonant |
 | **Reverse** | `EFilter.REVERSE` | Reverses each word |
 | **All Underscore** | `EFilter.ALL_UNDERSCORE` | Replaces all blank space by a _ (underscore) |
+| **Carioca Accent** | `EFilter.CARIOCA_ACCENT` | Replaces portuguese words ending in '[aeiou]s' with '[aeiou]ix' |
  
 #### 3. Docker Usage :whale:
 
