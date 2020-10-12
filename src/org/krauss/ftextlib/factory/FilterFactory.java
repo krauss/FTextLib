@@ -50,6 +50,9 @@ public class FilterFactory {
 		case ALL_UNDERSCORE:
 			f = new AllUnderscore();
 			break;
+		case CARIOCA_ACCENT:
+			f = new CariocaAccent();
+			break;
 		default:
 			break;
 		}

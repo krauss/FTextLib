@@ -24,7 +24,8 @@ public enum EFilter {
     PIG_LATIM("Pig Latim"),
     OPISH("Opish"),
     REVERSE("Reverse"),
-	ALL_UNDERSCORE("All Underscore");
+	ALL_UNDERSCORE("All Underscore"),
+	CARIOCA_ACCENT("Carioca Accent");
 
     private String name;
 
